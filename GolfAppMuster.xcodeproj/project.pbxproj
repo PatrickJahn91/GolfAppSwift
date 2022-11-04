@@ -14,6 +14,7 @@
 		51912A5828F04A650044686C /* GolfAppMuster.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 51912A5628F04A650044686C /* GolfAppMuster.xcdatamodeld */; };
 		51912A5A28F04A650044686C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 51912A5928F04A650044686C /* Assets.xcassets */; };
 		51912A5D28F04A650044686C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51912A5B28F04A650044686C /* LaunchScreen.storyboard */; };
+		51FED10029116CCE007065B0 /* MatchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51FED0FF29116CCE007065B0 /* MatchViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		51912A5928F04A650044686C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		51912A5C28F04A650044686C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		51912A5E28F04A650044686C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		51FED0FF29116CCE007065B0 /* MatchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MatchViewController.swift; path = ../MatchViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				51912A4D28F04A650044686C /* AppDelegate.swift */,
 				51912A4F28F04A650044686C /* SceneDelegate.swift */,
 				51912A5128F04A650044686C /* ViewController.swift */,
+				51FED0FF29116CCE007065B0 /* MatchViewController.swift */,
 				51912A5328F04A650044686C /* Main.storyboard */,
 				51912A5928F04A650044686C /* Assets.xcassets */,
 				51912A5B28F04A650044686C /* LaunchScreen.storyboard */,
@@ -141,6 +144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51FED10029116CCE007065B0 /* MatchViewController.swift in Sources */,
 				51912A5228F04A650044686C /* ViewController.swift in Sources */,
 				51912A4E28F04A650044686C /* AppDelegate.swift in Sources */,
 				51912A5028F04A650044686C /* SceneDelegate.swift in Sources */,
