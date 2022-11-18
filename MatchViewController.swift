@@ -8,7 +8,6 @@
 import UIKit
 
 
-
 class MatchViewController: UIViewController, UITableViewDataSource, UITableViewDelegate{
     @IBOutlet weak var ScoreCardTV: UITableView!
     
@@ -40,16 +39,14 @@ class MatchViewController: UIViewController, UITableViewDataSource, UITableViewD
     
     
     @IBOutlet weak var startRoundButton: UIButton!
-    @IBOutlet weak var showFrontNineButton: UIButton!
-    @IBOutlet weak var showBackNineButton: UIButton!
-    
-    @IBOutlet weak var showOther: UIButton!
-    
-    
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        print(bahnenSortedbyHCP)
+        print("123")
+        
         ScoreCardTV.delegate = self
         ScoreCardTV.dataSource = self
         
@@ -100,7 +97,8 @@ class MatchViewController: UIViewController, UITableViewDataSource, UITableViewD
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 150
+        return 220
+        
         
         //returnwert ist Höhe einer Zeile
     }
@@ -115,7 +113,14 @@ class MatchViewController: UIViewController, UITableViewDataSource, UITableViewD
         //TODO: Custom Tableview Cell Klasse einrichten
         
         var cell = ScoreCardTV.dequeueReusableCell(withIdentifier: "scorecardLine", for: indexPath) as! ScorecardTVCell
-        cell.bahnnummerLabel.text = "Bahn \(indexPath.row+1)"
+        cell.bahnnummerLabel.text = "Bahn " + clubBahnen[indexPath.row].bahnnummer.description
+        cell.parLabel.text = "Par " + clubBahnen[indexPath.row].bahnPar.description
+        cell.hcpLabel.text = "HCP " + clubBahnen[indexPath.row].bahnHcp.description
+        cell.distanceWhiteLabel.text = clubBahnen[indexPath.row].distanceWeiss.description
+        cell.distanceYellowLabel.text = clubBahnen[indexPath.row].distanceGelb.description
+        cell.distanceRedLabel.text = clubBahnen[indexPath.row].distanceRot.description
+        cell.distanceBlackLabel.text = clubBahnen[indexPath.row].distanceSchwarz.description
+        cell.distanceOrangeLabel.text = clubBahnen[indexPath.row].distanceOrange.description
         return cell
     }
 

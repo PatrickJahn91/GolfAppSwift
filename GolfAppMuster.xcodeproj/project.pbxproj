@@ -15,6 +15,12 @@
 		51912A5A28F04A650044686C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 51912A5928F04A650044686C /* Assets.xcassets */; };
 		51912A5D28F04A650044686C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51912A5B28F04A650044686C /* LaunchScreen.storyboard */; };
 		51C0458F2923E6E60025B9DF /* ScorecardTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C0458E2923E6E60025B9DF /* ScorecardTVCell.swift */; };
+		51C045922925229C0025B9DF /* BahnModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C045912925229C0025B9DF /* BahnModel.swift */; };
+		51C04594292524520025B9DF /* PlayerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C04593292524520025B9DF /* PlayerModel.swift */; };
+		51C04596292526B50025B9DF /* MatchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C04595292526B50025B9DF /* MatchModel.swift */; };
+		51C045982925291C0025B9DF /* RoundModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C045972925291C0025B9DF /* RoundModel.swift */; };
+		51C0459A292529940025B9DF /* ClubModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C04599292529940025B9DF /* ClubModel.swift */; };
+		51C0459C29252A8B0025B9DF /* SampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C0459B29252A8B0025B9DF /* SampleData.swift */; };
 		51FED10029116CCE007065B0 /* MatchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51FED0FF29116CCE007065B0 /* MatchViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +35,12 @@
 		51912A5C28F04A650044686C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		51912A5E28F04A650044686C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		51C0458E2923E6E60025B9DF /* ScorecardTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScorecardTVCell.swift; sourceTree = "<group>"; };
+		51C045912925229C0025B9DF /* BahnModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BahnModel.swift; sourceTree = "<group>"; };
+		51C04593292524520025B9DF /* PlayerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerModel.swift; sourceTree = "<group>"; };
+		51C04595292526B50025B9DF /* MatchModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchModel.swift; sourceTree = "<group>"; };
+		51C045972925291C0025B9DF /* RoundModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundModel.swift; sourceTree = "<group>"; };
+		51C04599292529940025B9DF /* ClubModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClubModel.swift; sourceTree = "<group>"; };
+		51C0459B29252A8B0025B9DF /* SampleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleData.swift; sourceTree = "<group>"; };
 		51FED0FF29116CCE007065B0 /* MatchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MatchViewController.swift; path = ../MatchViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -62,6 +74,7 @@
 		51912A4C28F04A650044686C /* GolfAppMuster */ = {
 			isa = PBXGroup;
 			children = (
+				51C04590292522720025B9DF /* model */,
 				51C0458E2923E6E60025B9DF /* ScorecardTVCell.swift */,
 				51912A4D28F04A650044686C /* AppDelegate.swift */,
 				51912A4F28F04A650044686C /* SceneDelegate.swift */,
@@ -72,8 +85,21 @@
 				51912A5B28F04A650044686C /* LaunchScreen.storyboard */,
 				51912A5E28F04A650044686C /* Info.plist */,
 				51912A5628F04A650044686C /* GolfAppMuster.xcdatamodeld */,
+				51C0459B29252A8B0025B9DF /* SampleData.swift */,
 			);
 			path = GolfAppMuster;
+			sourceTree = "<group>";
+		};
+		51C04590292522720025B9DF /* model */ = {
+			isa = PBXGroup;
+			children = (
+				51C045912925229C0025B9DF /* BahnModel.swift */,
+				51C04593292524520025B9DF /* PlayerModel.swift */,
+				51C04595292526B50025B9DF /* MatchModel.swift */,
+				51C045972925291C0025B9DF /* RoundModel.swift */,
+				51C04599292529940025B9DF /* ClubModel.swift */,
+			);
+			path = model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,9 +173,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51C0459A292529940025B9DF /* ClubModel.swift in Sources */,
+				51C04596292526B50025B9DF /* MatchModel.swift in Sources */,
 				51FED10029116CCE007065B0 /* MatchViewController.swift in Sources */,
 				51912A5228F04A650044686C /* ViewController.swift in Sources */,
+				51C04594292524520025B9DF /* PlayerModel.swift in Sources */,
 				51912A4E28F04A650044686C /* AppDelegate.swift in Sources */,
+				51C045922925229C0025B9DF /* BahnModel.swift in Sources */,
+				51C0459C29252A8B0025B9DF /* SampleData.swift in Sources */,
+				51C045982925291C0025B9DF /* RoundModel.swift in Sources */,
 				51912A5028F04A650044686C /* SceneDelegate.swift in Sources */,
 				51C0458F2923E6E60025B9DF /* ScorecardTVCell.swift in Sources */,
 				51912A5828F04A650044686C /* GolfAppMuster.xcdatamodeld in Sources */,
