@@ -11,8 +11,8 @@ import Foundation
 
 struct Runde {
     var gespielteBahn : Bahn
-    var bahnVorgabe : [Int?]
-    var bahnSchläge : [Int?]
-    var bahnBrutto : [Int?]
-    var bahnNetto : [Int?]
+    var bahnVorgabe : [Int]
+    var bahnSchläge : [Int]
+    var bahnBrutto : [Int]
+    var bahnNetto : [Int]
 }

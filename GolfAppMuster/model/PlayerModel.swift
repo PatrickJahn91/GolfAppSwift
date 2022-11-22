@@ -10,5 +10,5 @@ import Foundation
 struct Player{
     var name : String
     var handicap : Float
-    var tee : Int
+    var tee : String
 }

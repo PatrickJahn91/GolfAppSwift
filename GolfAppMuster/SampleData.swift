@@ -30,6 +30,7 @@ var bahn18 = Bahn(bahnnummer: 18, bahnPar: 5, bahnHcp: 4,  distanceWeiss: 472, d
 var clubBahnen = [bahn1, bahn2, bahn3, bahn4, bahn5, bahn6, bahn7, bahn8, bahn9, bahn10, bahn11, bahn12, bahn13, bahn14, bahn15, bahn16, bahn17, bahn18]
 
 
+
 var bahnenSortedbyHCP = clubBahnen.sorted(by: { $0.bahnHcp < $1.bahnHcp })
 
 
@@ -38,10 +39,10 @@ var bahnenSortedbyHCP = clubBahnen.sorted(by: { $0.bahnHcp < $1.bahnHcp })
 var club = Club(name: "Golfclub Rügen", image: UIImage(systemName: "figure.golf")!, bahnen: clubBahnen, platzParRegular: 72, platzParSpecial: 69, slopeWhite: 140, slopeYellow: 139, slopeRedMen: 122, slopeBlack: 140, slopeRedWomen: 129, slopeOrange: 126, courseRatingWhite: 73.0, courseRatingYellow: 71.3, courseRatingRedMen: 68.4, courseRatingBlack: 77.7, courseRatingRedWomen: 74.0, courseRatingOrange: 72.5)
 
 
-var player1 = Player(name: "Fabian", handicap: 0.0, tee: 1)
-var player2 = Player(name: "Patrick", handicap: 34.8, tee: 2)
-var player3 = Player(name: "Marvin", handicap: 0.0, tee: 1)
-var player4 = Player(name: "Felix", handicap: 54.0, tee: 2)
+var player1 = Player(name: "Fabian", handicap: 0.0, tee: "1")
+var player2 = Player(name: "Patrick", handicap: 34.8, tee: "2")
+var player3 = Player(name: "Marvin", handicap: 0.0, tee: "1")
+var player4 = Player(name: "Felix", handicap: 54.0, tee: "2")
 
 //var players = [player1, player2, player3, player4]
 

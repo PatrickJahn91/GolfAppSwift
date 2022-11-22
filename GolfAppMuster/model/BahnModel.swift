@@ -8,7 +8,7 @@
 import Foundation
 
 
-struct Bahn {
+struct Bahn : Equatable {
     var bahnnummer : Int
     var bahnPar : Int
     var bahnHcp : Int

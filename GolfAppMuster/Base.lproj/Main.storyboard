@@ -149,6 +149,9 @@
                                 <state key="normal" title="Start">
                                     <color key="titleColor" systemColor="tertiarySystemBackgroundColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="startRoundButton:" destination="57o-bd-8NL" eventType="touchUpInside" id="BTy-VQ-5L9"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Abschlag" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tTl-8Q-WrU">
                                 <rect key="frame" x="8" y="195" width="71" height="21"/>
@@ -730,7 +733,6 @@
                         <outlet property="nameP2" destination="9Oo-Hy-Awz" id="LDS-wv-d7f"/>
                         <outlet property="nameP3" destination="j1n-t8-aRt" id="XfW-aV-mzE"/>
                         <outlet property="nameP4" destination="mRC-Vy-RW3" id="Bw0-XE-wVo"/>
-                        <outlet property="startRoundButton" destination="e14-Tw-m76" id="Opd-Sl-BJt"/>
                         <outlet property="teeP1Button" destination="Boe-Ic-Eme" id="9cv-HJ-zmx"/>
                         <outlet property="teeP2Button" destination="w1C-JH-Ywg" id="jmp-ba-7NE"/>
                         <outlet property="teeP3Button" destination="6aI-Rx-Um3" id="pZS-6i-5A7"/>
