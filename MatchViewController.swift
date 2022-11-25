@@ -30,16 +30,47 @@ class MatchViewController: UIViewController, UITableViewDataSource, UITableViewD
         cell.distanceRedLabel.text = clubBahnen[indexPath.row].distanceRot.description
         cell.distanceBlackLabel.text = clubBahnen[indexPath.row].distanceSchwarz.description
         cell.distanceOrangeLabel.text = clubBahnen[indexPath.row].distanceOrange.description
+        
+        print("Rundenvorgabe P1 : \(rundenInfos[indexPath.row].bahnVorgabe)")
+        
         cell.vorgabeP1Label.text = rundenInfos[indexPath.row].bahnVorgabe[0].description
         cell.vorgabeP2Label.text = rundenInfos[indexPath.row].bahnVorgabe[1].description
         cell.vorgabeP3Label.text = rundenInfos[indexPath.row].bahnVorgabe[2].description
         cell.vorgabeP4Label.text = rundenInfos[indexPath.row].bahnVorgabe[3].description
+        
+        cell.bruttoP1.text = rundenInfos[indexPath.row].bahnBrutto[0].description
+        cell.bruttoP2.text = rundenInfos[indexPath.row].bahnBrutto[1].description
+        cell.bruttoP3.text = rundenInfos[indexPath.row].bahnBrutto[2].description
+        cell.bruttoP4.text = rundenInfos[indexPath.row].bahnBrutto[3].description
+        
+        cell.nettoP1.text = rundenInfos[indexPath.row].bahnNetto[0].description
+        cell.nettoP2.text = rundenInfos[indexPath.row].bahnNetto[1].description
+        cell.nettoP3.text = rundenInfos[indexPath.row].bahnNetto[2].description
+        cell.nettoP4.text = rundenInfos[indexPath.row].bahnNetto[3].description
+        
+        cell.shotsP1Textfield.text = rundenInfos[indexPath.row].bahnSchläge[0].description
+        cell.shotsP2Textfield.text = rundenInfos[indexPath.row].bahnSchläge[1].description
+        cell.shotsP3Textfield.text = rundenInfos[indexPath.row].bahnSchläge[2].description
+        cell.shotsP4Textfield.text = rundenInfos[indexPath.row].bahnSchläge[3].description
+        cell.finishHoleButton.tag = indexPath.row
         return cell
     }
+   
     
     @IBOutlet weak var ScoreCardTV: UITableView!
     
-    @IBOutlet weak var endRoundButton: UIButton!
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "endRound"{
+            let targetVC = segue.destination as! ResultListsViewController
+            targetVC.player1Bahnen = rundenInfos
+            targetVC.player1Name = player1.name
+            targetVC.player2Name = player2.name
+            targetVC.player3Name = player3.name
+            targetVC.player4Name = player4.name
+        }
+    }
+    @IBAction func endRoundButton(_ sender: Any) {
+    }
     
     
     
@@ -64,7 +95,7 @@ class MatchViewController: UIViewController, UITableViewDataSource, UITableViewD
     @IBOutlet weak var handicapP4: UITextField!
     @IBOutlet weak var teeP4Button: UIButton!
     
-       
+    
     @IBAction func startRoundButton(_ sender: Any) {
         createPlayers()
         calculateVorgaben()
@@ -72,6 +103,7 @@ class MatchViewController: UIViewController, UITableViewDataSource, UITableViewD
         setVorgaben()
         ScoreCardTV.reloadData()
     }
+    
     var slopeP1: Float = 140.0
     var courseRatingP1: Float = 73.0
     var parP1: Float = 72.0
@@ -180,7 +212,7 @@ class MatchViewController: UIViewController, UITableViewDataSource, UITableViewD
         ]
         )
         
-       
+        
         
         teeP3Button.menu = UIMenu(children: [
             UIAction(title: "H, weiß", state: .on){action in
@@ -255,22 +287,23 @@ class MatchViewController: UIViewController, UITableViewDataSource, UITableViewD
     }
     
     func createPlayers(){
-        player1.name = NameP1.description
+        player1.name = NameP1.text!
         player1.handicap = (handicapP1.text! as NSString).floatValue
         player1.tee = teeP1Button.menu!.description
         
-        player2.name = nameP2.description
+        player2.name = nameP2.text!
         player2.handicap = (handicapP2.text! as NSString).floatValue
         player2.tee = teeP2Button.menu!.description
         
-        player3.name = nameP3.description
+        player3.name = nameP3.text!
         player3.handicap = (handicapP3.text! as NSString).floatValue
         player3.tee = teeP3Button.menu!.description
         
-        player4.name = nameP4.description
+        player4.name = nameP4.text!
         player4.handicap = (handicapP4.text! as NSString).floatValue
         player4.tee = teeP4Button.menu!.description
     }
+    
     
     var rundenvorgabeP1: Float = 0.0
     var rundenvorgabeP2: Float = 0.0
@@ -288,40 +321,39 @@ class MatchViewController: UIViewController, UITableViewDataSource, UITableViewD
         rundenvorgabeP4 = player4.handicap * (slopeP4/113)-courseRatingP4+parP4
     }
     
-   //var bahnVorgabeP1: Int = 0
+    
     func setVorgaben(){
+        let rundenVorgabenListe = [rundenvorgabeP1, rundenvorgabeP2, rundenvorgabeP3, rundenvorgabeP4]
         for index in 0...rundenInfos.count - 1{
-            var currentRound = rundenInfos[index]
-            currentRound.bahnVorgabe[0] = Int(rundenvorgabeP1.rounded())/18
-            currentRound.bahnVorgabe[1] = Int(rundenvorgabeP2.rounded())/18
-            currentRound.bahnVorgabe[2] = Int(rundenvorgabeP3.rounded())/18
-            currentRound.bahnVorgabe[3] = Int(rundenvorgabeP4.rounded())/18
-            
-            var restVorgabeP1 = Int(rundenvorgabeP1.rounded())%18
-            var restVorgabeP2 = Int(rundenvorgabeP2.rounded())%18
-            var restVorgabeP3 = Int(rundenvorgabeP3.rounded())%18
-            var restVorgabeP4 = Int(rundenvorgabeP4.rounded())%18
-            
-            if restVorgabeP1 >= currentRound.gespielteBahn.bahnHcp {
-                currentRound.bahnVorgabe[0] = currentRound.bahnVorgabe[0] + 1
+            for playerIndex in 0...3{
+                rundenInfos[index].bahnVorgabe[playerIndex] = Int(rundenVorgabenListe[playerIndex].rounded())/18;
+                if Int(rundenVorgabenListe[playerIndex].rounded())%18 >= rundenInfos[index].gespielteBahn.bahnHcp{
+                    rundenInfos[index].bahnVorgabe[playerIndex] = rundenInfos[index].bahnVorgabe[playerIndex] + 1
+                }
             }
-            
-            if restVorgabeP2 >= currentRound.gespielteBahn.bahnHcp {
-                currentRound.bahnVorgabe[1] = currentRound.bahnVorgabe[1] + 1
-            }
-            
-            if restVorgabeP3 >= currentRound.gespielteBahn.bahnHcp {
-                currentRound.bahnVorgabe[2] = currentRound.bahnVorgabe[2] + 1
-            }
-            
-            if restVorgabeP4 >= currentRound.gespielteBahn.bahnHcp {
-                currentRound.bahnVorgabe[3] = currentRound.bahnVorgabe[3] + 1
-            }
-            print("Rundenvorgabe P1 : \(currentRound.bahnVorgabe)")
         }
-        
-        
-        
+    }
+    
+    func calculateBrutto(bahnIndex: Int, currentShots: [Int]){
+       
+        for playerIndex in 0...3{
+            rundenInfos[bahnIndex].bahnSchläge[playerIndex] = currentShots[playerIndex]
+            rundenInfos[bahnIndex].bahnBrutto[playerIndex] = clubBahnen[bahnIndex].bahnPar + 2 - rundenInfos[bahnIndex].bahnSchläge[playerIndex]
+            if (rundenInfos[bahnIndex].bahnBrutto[playerIndex] < 0) {
+                rundenInfos[bahnIndex].bahnBrutto[playerIndex] = 0
+            }
+        }
+    }
+    
+    func calculateNetto(bahnIndex: Int, currentShots: [Int]){
+       
+        for playerIndex in 0...3{
+            rundenInfos[bahnIndex].bahnSchläge[playerIndex] = currentShots[playerIndex]
+            rundenInfos[bahnIndex].bahnNetto[playerIndex] = clubBahnen[bahnIndex].bahnPar + rundenInfos[bahnIndex].bahnVorgabe[playerIndex] + 2 - rundenInfos[bahnIndex].bahnSchläge[playerIndex]
+            if (rundenInfos[bahnIndex].bahnNetto[playerIndex] < 0) {
+                rundenInfos[bahnIndex].bahnNetto[playerIndex] = 0
+            }
+        }
     }
 }
 

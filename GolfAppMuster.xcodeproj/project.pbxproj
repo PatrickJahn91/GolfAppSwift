@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		513F9D4F292E72A4008D4EF6 /* ResultListsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 513F9D4E292E72A4008D4EF6 /* ResultListsViewController.swift */; };
+		513F9D51292EBBD7008D4EF6 /* MatchResultTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 513F9D50292EBBD7008D4EF6 /* MatchResultTableViewCell.swift */; };
 		51912A4E28F04A650044686C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51912A4D28F04A650044686C /* AppDelegate.swift */; };
 		51912A5028F04A650044686C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51912A4F28F04A650044686C /* SceneDelegate.swift */; };
 		51912A5228F04A650044686C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51912A5128F04A650044686C /* ViewController.swift */; };
@@ -25,6 +27,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		513F9D4E292E72A4008D4EF6 /* ResultListsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultListsViewController.swift; sourceTree = "<group>"; };
+		513F9D50292EBBD7008D4EF6 /* MatchResultTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchResultTableViewCell.swift; sourceTree = "<group>"; };
 		51912A4A28F04A650044686C /* GolfAppMuster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GolfAppMuster.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		51912A4D28F04A650044686C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		51912A4F28F04A650044686C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -80,6 +84,8 @@
 				51912A4F28F04A650044686C /* SceneDelegate.swift */,
 				51912A5128F04A650044686C /* ViewController.swift */,
 				51FED0FF29116CCE007065B0 /* MatchViewController.swift */,
+				513F9D4E292E72A4008D4EF6 /* ResultListsViewController.swift */,
+				513F9D50292EBBD7008D4EF6 /* MatchResultTableViewCell.swift */,
 				51912A5328F04A650044686C /* Main.storyboard */,
 				51912A5928F04A650044686C /* Assets.xcassets */,
 				51912A5B28F04A650044686C /* LaunchScreen.storyboard */,
@@ -182,6 +188,8 @@
 				51C045922925229C0025B9DF /* BahnModel.swift in Sources */,
 				51C0459C29252A8B0025B9DF /* SampleData.swift in Sources */,
 				51C045982925291C0025B9DF /* RoundModel.swift in Sources */,
+				513F9D4F292E72A4008D4EF6 /* ResultListsViewController.swift in Sources */,
+				513F9D51292EBBD7008D4EF6 /* MatchResultTableViewCell.swift in Sources */,
 				51912A5028F04A650044686C /* SceneDelegate.swift in Sources */,
 				51C0458F2923E6E60025B9DF /* ScorecardTVCell.swift in Sources */,
 				51912A5828F04A650044686C /* GolfAppMuster.xcdatamodeld in Sources */,
