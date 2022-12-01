@@ -31,7 +31,6 @@ class MatchViewController: UIViewController, UITableViewDataSource, UITableViewD
         cell.distanceBlackLabel.text = clubBahnen[indexPath.row].distanceSchwarz.description
         cell.distanceOrangeLabel.text = clubBahnen[indexPath.row].distanceOrange.description
         
-        print("Rundenvorgabe P1 : \(rundenInfos[indexPath.row].bahnVorgabe)")
         
         cell.vorgabeP1Label.text = rundenInfos[indexPath.row].bahnVorgabe[0].description
         cell.vorgabeP2Label.text = rundenInfos[indexPath.row].bahnVorgabe[1].description
@@ -55,7 +54,6 @@ class MatchViewController: UIViewController, UITableViewDataSource, UITableViewD
         cell.finishHoleButton.tag = indexPath.row
         return cell
     }
-   
     
     @IBOutlet weak var ScoreCardTV: UITableView!
     
@@ -67,6 +65,7 @@ class MatchViewController: UIViewController, UITableViewDataSource, UITableViewD
             targetVC.player2Name = player2.name
             targetVC.player3Name = player3.name
             targetVC.player4Name = player4.name
+            
         }
     }
     @IBAction func endRoundButton(_ sender: Any) {
@@ -99,7 +98,6 @@ class MatchViewController: UIViewController, UITableViewDataSource, UITableViewD
     @IBAction func startRoundButton(_ sender: Any) {
         createPlayers()
         calculateVorgaben()
-        print(rundenvorgabeP1,rundenvorgabeP2,rundenvorgabeP3,rundenvorgabeP4)
         setVorgaben()
         ScoreCardTV.reloadData()
     }
@@ -125,8 +123,6 @@ class MatchViewController: UIViewController, UITableViewDataSource, UITableViewD
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        print(bahnenSortedbyHCP)
-        print("123")
         
         ScoreCardTV.delegate = self
         ScoreCardTV.dataSource = self
@@ -310,11 +306,6 @@ class MatchViewController: UIViewController, UITableViewDataSource, UITableViewD
     var rundenvorgabeP3: Float = 0.0
     var rundenvorgabeP4: Float = 0.0
     func calculateVorgaben(){
-        print("Player 1 Stats:" )
-        print("Player1 Handicap:\(player1.handicap)")
-        print("Player1 Slope: \(slopeP1)")
-        print("Player1 CR: \(courseRatingP1)")
-        print("Player1 CR: \(parP1)")
         rundenvorgabeP1 = player1.handicap * (slopeP1/113)-courseRatingP1+parP1
         rundenvorgabeP2 = player2.handicap * (slopeP2/113)-courseRatingP2+parP2
         rundenvorgabeP3 = player3.handicap * (slopeP3/113)-courseRatingP3+parP3

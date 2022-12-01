@@ -8,12 +8,53 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    let tournamentAPIClient : TournamentAPIClient = TournamentAPIClient()
+    
+    var tournamentList : [TournamentInfo]?
 
+    @IBOutlet weak var TournamentsTV: UITableView!
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        tournamentAPIClient.getTournaments{
+            tournamentList in
+            self.tournamentList = tournamentList
+            DispatchQueue.main.async {self.TournamentsTV.reloadData()}
+        }
+        
+        
+        //TournamentsTV.delegate = self
+        TournamentsTV.dataSource = self
+    
     }
-
-//nbhv dgfsbdkj 
 }
 
+extension ViewController: UITableViewDataSource {
+    
+    
+    
+   
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        if section == 0 {
+            return 17        } else {
+            return tournamentList?.count ?? 0
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+            let cell = tableView.dequeueReusableCell(withIdentifier: "TournamentCell") as! TournamentsTableViewCell
+            guard let tournament = tournamentList?[indexPath.row] else {return cell}
+            cell.headerLabel.text = tournament.Tournament
+            cell.descriptionLabel.text = tournament.Description
+           
+            return cell
+    }
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+            return 200
+            //returnwert ist Höhe einer Zeile
+        }
+}

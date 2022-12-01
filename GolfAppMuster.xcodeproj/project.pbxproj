@@ -16,6 +16,8 @@
 		51912A5828F04A650044686C /* GolfAppMuster.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 51912A5628F04A650044686C /* GolfAppMuster.xcdatamodeld */; };
 		51912A5A28F04A650044686C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 51912A5928F04A650044686C /* Assets.xcassets */; };
 		51912A5D28F04A650044686C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51912A5B28F04A650044686C /* LaunchScreen.storyboard */; };
+		51BB92EB2937630400802174 /* TournamentsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51BB92EA2937630400802174 /* TournamentsTableViewCell.swift */; };
+		51BB92ED2937998000802174 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51BB92EC2937998000802174 /* ProfileViewController.swift */; };
 		51C0458F2923E6E60025B9DF /* ScorecardTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C0458E2923E6E60025B9DF /* ScorecardTVCell.swift */; };
 		51C045922925229C0025B9DF /* BahnModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C045912925229C0025B9DF /* BahnModel.swift */; };
 		51C04594292524520025B9DF /* PlayerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C04593292524520025B9DF /* PlayerModel.swift */; };
@@ -23,6 +25,8 @@
 		51C045982925291C0025B9DF /* RoundModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C045972925291C0025B9DF /* RoundModel.swift */; };
 		51C0459A292529940025B9DF /* ClubModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C04599292529940025B9DF /* ClubModel.swift */; };
 		51C0459C29252A8B0025B9DF /* SampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C0459B29252A8B0025B9DF /* SampleData.swift */; };
+		51DB905D29363727000AD4F2 /* TournamentAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51DB905C29363727000AD4F2 /* TournamentAPIClient.swift */; };
+		51DB9063293637DD000AD4F2 /* TournamentFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51DB9062293637DD000AD4F2 /* TournamentFeed.swift */; };
 		51FED10029116CCE007065B0 /* MatchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51FED0FF29116CCE007065B0 /* MatchViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -38,6 +42,8 @@
 		51912A5928F04A650044686C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		51912A5C28F04A650044686C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		51912A5E28F04A650044686C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		51BB92EA2937630400802174 /* TournamentsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TournamentsTableViewCell.swift; sourceTree = "<group>"; };
+		51BB92EC2937998000802174 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		51C0458E2923E6E60025B9DF /* ScorecardTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScorecardTVCell.swift; sourceTree = "<group>"; };
 		51C045912925229C0025B9DF /* BahnModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BahnModel.swift; sourceTree = "<group>"; };
 		51C04593292524520025B9DF /* PlayerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerModel.swift; sourceTree = "<group>"; };
@@ -45,6 +51,8 @@
 		51C045972925291C0025B9DF /* RoundModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundModel.swift; sourceTree = "<group>"; };
 		51C04599292529940025B9DF /* ClubModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClubModel.swift; sourceTree = "<group>"; };
 		51C0459B29252A8B0025B9DF /* SampleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleData.swift; sourceTree = "<group>"; };
+		51DB905C29363727000AD4F2 /* TournamentAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TournamentAPIClient.swift; sourceTree = "<group>"; };
+		51DB9062293637DD000AD4F2 /* TournamentFeed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TournamentFeed.swift; sourceTree = "<group>"; };
 		51FED0FF29116CCE007065B0 /* MatchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MatchViewController.swift; path = ../MatchViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -82,7 +90,6 @@
 				51C0458E2923E6E60025B9DF /* ScorecardTVCell.swift */,
 				51912A4D28F04A650044686C /* AppDelegate.swift */,
 				51912A4F28F04A650044686C /* SceneDelegate.swift */,
-				51912A5128F04A650044686C /* ViewController.swift */,
 				51FED0FF29116CCE007065B0 /* MatchViewController.swift */,
 				513F9D4E292E72A4008D4EF6 /* ResultListsViewController.swift */,
 				513F9D50292EBBD7008D4EF6 /* MatchResultTableViewCell.swift */,
@@ -92,6 +99,11 @@
 				51912A5E28F04A650044686C /* Info.plist */,
 				51912A5628F04A650044686C /* GolfAppMuster.xcdatamodeld */,
 				51C0459B29252A8B0025B9DF /* SampleData.swift */,
+				51912A5128F04A650044686C /* ViewController.swift */,
+				51DB905C29363727000AD4F2 /* TournamentAPIClient.swift */,
+				51DB9062293637DD000AD4F2 /* TournamentFeed.swift */,
+				51BB92EA2937630400802174 /* TournamentsTableViewCell.swift */,
+				51BB92EC2937998000802174 /* ProfileViewController.swift */,
 			);
 			path = GolfAppMuster;
 			sourceTree = "<group>";
@@ -181,13 +193,17 @@
 			files = (
 				51C0459A292529940025B9DF /* ClubModel.swift in Sources */,
 				51C04596292526B50025B9DF /* MatchModel.swift in Sources */,
+				51DB9063293637DD000AD4F2 /* TournamentFeed.swift in Sources */,
 				51FED10029116CCE007065B0 /* MatchViewController.swift in Sources */,
 				51912A5228F04A650044686C /* ViewController.swift in Sources */,
 				51C04594292524520025B9DF /* PlayerModel.swift in Sources */,
+				51BB92ED2937998000802174 /* ProfileViewController.swift in Sources */,
+				51DB905D29363727000AD4F2 /* TournamentAPIClient.swift in Sources */,
 				51912A4E28F04A650044686C /* AppDelegate.swift in Sources */,
 				51C045922925229C0025B9DF /* BahnModel.swift in Sources */,
 				51C0459C29252A8B0025B9DF /* SampleData.swift in Sources */,
 				51C045982925291C0025B9DF /* RoundModel.swift in Sources */,
+				51BB92EB2937630400802174 /* TournamentsTableViewCell.swift in Sources */,
 				513F9D4F292E72A4008D4EF6 /* ResultListsViewController.swift in Sources */,
 				513F9D51292EBBD7008D4EF6 /* MatchResultTableViewCell.swift in Sources */,
 				51912A5028F04A650044686C /* SceneDelegate.swift in Sources */,

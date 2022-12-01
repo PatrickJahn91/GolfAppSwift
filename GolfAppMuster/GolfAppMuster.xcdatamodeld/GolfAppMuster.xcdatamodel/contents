@@ -8,7 +8,7 @@
         <relationship name="rundenRelation" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Matches" inverseName="bahnenRelation" inverseEntity="Matches"/>
     </entity>
     <entity name="Matches" representedClassName="Matches" syncable="YES" codeGenerationType="class">
-        <attribute name="player" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="player" optional="YES" attributeType="String"/>
         <relationship name="bahnenRelation" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Bahnen" inverseName="rundenRelation" inverseEntity="Bahnen"/>
     </entity>
 </model>
