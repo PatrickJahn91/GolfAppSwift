@@ -7,8 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		20153C0322C818EAE3543D7C /* Pods_GolfAppMuster.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E48AD6662E495F6B6BD87FD4 /* Pods_GolfAppMuster.framework */; };
+		5125C4702938F0A100EBD08E /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5125C46F2938F0A100EBD08E /* SignUpViewController.swift */; };
 		513F9D4F292E72A4008D4EF6 /* ResultListsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 513F9D4E292E72A4008D4EF6 /* ResultListsViewController.swift */; };
 		513F9D51292EBBD7008D4EF6 /* MatchResultTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 513F9D50292EBBD7008D4EF6 /* MatchResultTableViewCell.swift */; };
+		51657A77293A2F6E001646EE /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51657A76293A2F6E001646EE /* LoginViewController.swift */; };
 		51912A4E28F04A650044686C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51912A4D28F04A650044686C /* AppDelegate.swift */; };
 		51912A5028F04A650044686C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51912A4F28F04A650044686C /* SceneDelegate.swift */; };
 		51912A5228F04A650044686C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51912A5128F04A650044686C /* ViewController.swift */; };
@@ -31,8 +34,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5125C46F2938F0A100EBD08E /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		513F9D4E292E72A4008D4EF6 /* ResultListsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultListsViewController.swift; sourceTree = "<group>"; };
 		513F9D50292EBBD7008D4EF6 /* MatchResultTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchResultTableViewCell.swift; sourceTree = "<group>"; };
+		51657A75293A0B59001646EE /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		51657A76293A2F6E001646EE /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		51912A4A28F04A650044686C /* GolfAppMuster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GolfAppMuster.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		51912A4D28F04A650044686C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		51912A4F28F04A650044686C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -54,6 +60,9 @@
 		51DB905C29363727000AD4F2 /* TournamentAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TournamentAPIClient.swift; sourceTree = "<group>"; };
 		51DB9062293637DD000AD4F2 /* TournamentFeed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TournamentFeed.swift; sourceTree = "<group>"; };
 		51FED0FF29116CCE007065B0 /* MatchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MatchViewController.swift; path = ../MatchViewController.swift; sourceTree = "<group>"; };
+		B10A5C035BFA109FDAF445E5 /* Pods-GolfAppMuster.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GolfAppMuster.release.xcconfig"; path = "Target Support Files/Pods-GolfAppMuster/Pods-GolfAppMuster.release.xcconfig"; sourceTree = "<group>"; };
+		E48AD6662E495F6B6BD87FD4 /* Pods_GolfAppMuster.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GolfAppMuster.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE684F9F93B8F5AACB26B352 /* Pods-GolfAppMuster.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GolfAppMuster.debug.xcconfig"; path = "Target Support Files/Pods-GolfAppMuster/Pods-GolfAppMuster.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20153C0322C818EAE3543D7C /* Pods_GolfAppMuster.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +82,8 @@
 			children = (
 				51912A4C28F04A650044686C /* GolfAppMuster */,
 				51912A4B28F04A650044686C /* Products */,
+				649D62B2B36CAC73C917D857 /* Pods */,
+				DB1DC1563A02672F30D652D0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,6 +109,7 @@
 				51912A5928F04A650044686C /* Assets.xcassets */,
 				51912A5B28F04A650044686C /* LaunchScreen.storyboard */,
 				51912A5E28F04A650044686C /* Info.plist */,
+				51657A75293A0B59001646EE /* GoogleService-Info.plist */,
 				51912A5628F04A650044686C /* GolfAppMuster.xcdatamodeld */,
 				51C0459B29252A8B0025B9DF /* SampleData.swift */,
 				51912A5128F04A650044686C /* ViewController.swift */,
@@ -104,6 +117,8 @@
 				51DB9062293637DD000AD4F2 /* TournamentFeed.swift */,
 				51BB92EA2937630400802174 /* TournamentsTableViewCell.swift */,
 				51BB92EC2937998000802174 /* ProfileViewController.swift */,
+				5125C46F2938F0A100EBD08E /* SignUpViewController.swift */,
+				51657A76293A2F6E001646EE /* LoginViewController.swift */,
 			);
 			path = GolfAppMuster;
 			sourceTree = "<group>";
@@ -120,6 +135,23 @@
 			path = model;
 			sourceTree = "<group>";
 		};
+		649D62B2B36CAC73C917D857 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EE684F9F93B8F5AACB26B352 /* Pods-GolfAppMuster.debug.xcconfig */,
+				B10A5C035BFA109FDAF445E5 /* Pods-GolfAppMuster.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		DB1DC1563A02672F30D652D0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E48AD6662E495F6B6BD87FD4 /* Pods_GolfAppMuster.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -127,9 +159,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 51912A6128F04A650044686C /* Build configuration list for PBXNativeTarget "GolfAppMuster" */;
 			buildPhases = (
+				A0C7AFDB5C9829B6D94F74EB /* [CP] Check Pods Manifest.lock */,
 				51912A4628F04A650044686C /* Sources */,
 				51912A4728F04A650044686C /* Frameworks */,
 				51912A4828F04A650044686C /* Resources */,
+				F4A6BE23E439BF3868489FC5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -186,6 +220,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		A0C7AFDB5C9829B6D94F74EB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GolfAppMuster-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F4A6BE23E439BF3868489FC5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GolfAppMuster/Pods-GolfAppMuster-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GolfAppMuster/Pods-GolfAppMuster-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GolfAppMuster/Pods-GolfAppMuster-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		51912A4628F04A650044686C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -198,6 +274,8 @@
 				51912A5228F04A650044686C /* ViewController.swift in Sources */,
 				51C04594292524520025B9DF /* PlayerModel.swift in Sources */,
 				51BB92ED2937998000802174 /* ProfileViewController.swift in Sources */,
+				5125C4702938F0A100EBD08E /* SignUpViewController.swift in Sources */,
+				51657A77293A2F6E001646EE /* LoginViewController.swift in Sources */,
 				51DB905D29363727000AD4F2 /* TournamentAPIClient.swift in Sources */,
 				51912A4E28F04A650044686C /* AppDelegate.swift in Sources */,
 				51C045922925229C0025B9DF /* BahnModel.swift in Sources */,
@@ -350,6 +428,7 @@
 		};
 		51912A6228F04A650044686C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE684F9F93B8F5AACB26B352 /* Pods-GolfAppMuster.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -378,6 +457,7 @@
 		};
 		51912A6328F04A650044686C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B10A5C035BFA109FDAF445E5 /* Pods-GolfAppMuster.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

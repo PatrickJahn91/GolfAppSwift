@@ -9,13 +9,21 @@ import UIKit
 
 class ProfileViewController: UIViewController {
 
+    @IBOutlet weak var nameTF: UITextField!
+    
+    @IBOutlet weak var handicapTF: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func logOutBTN(_ sender: Any) {
+    }
+    
+    @IBAction func saveBTN(_ sender: Any) {
+    }
     /*
     // MARK: - Navigation
 

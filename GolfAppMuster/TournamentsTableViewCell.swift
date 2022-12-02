@@ -10,6 +10,7 @@ import UIKit
 class TournamentsTableViewCell: UITableViewCell {
     
     @IBOutlet weak var headerLabel: UILabel!
-    @IBOutlet weak var descriptionLabel: UILabel!
+    
+    @IBOutlet weak var descriptionLabel: UITextView!
     
 }
