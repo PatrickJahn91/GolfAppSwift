@@ -6,7 +6,9 @@
 //
 
 import UIKit
+import Firebase
 import FirebaseAuth
+
 
 class LoginViewController: UIViewController {
     
@@ -29,7 +31,7 @@ class LoginViewController: UIViewController {
         
         if !uid.isEmpty {
             print("\(uid)")
-            performSegue(withIdentifier: "loginSuccessful", sender: nil)
+            //performSegue(withIdentifier: "loginSuccessful", sender: nil)
         }
     }
     

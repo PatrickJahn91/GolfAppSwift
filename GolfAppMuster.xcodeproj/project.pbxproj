@@ -30,6 +30,7 @@
 		51C0459C29252A8B0025B9DF /* SampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C0459B29252A8B0025B9DF /* SampleData.swift */; };
 		51DB905D29363727000AD4F2 /* TournamentAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51DB905C29363727000AD4F2 /* TournamentAPIClient.swift */; };
 		51DB9063293637DD000AD4F2 /* TournamentFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51DB9062293637DD000AD4F2 /* TournamentFeed.swift */; };
+		51F44F3E293E31C10085DB01 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 51F44F3D293E31C10085DB01 /* GoogleService-Info.plist */; };
 		51FED10029116CCE007065B0 /* MatchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51FED0FF29116CCE007065B0 /* MatchViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -37,7 +38,6 @@
 		5125C46F2938F0A100EBD08E /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		513F9D4E292E72A4008D4EF6 /* ResultListsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultListsViewController.swift; sourceTree = "<group>"; };
 		513F9D50292EBBD7008D4EF6 /* MatchResultTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchResultTableViewCell.swift; sourceTree = "<group>"; };
-		51657A75293A0B59001646EE /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		51657A76293A2F6E001646EE /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		51912A4A28F04A650044686C /* GolfAppMuster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GolfAppMuster.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		51912A4D28F04A650044686C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +59,7 @@
 		51C0459B29252A8B0025B9DF /* SampleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleData.swift; sourceTree = "<group>"; };
 		51DB905C29363727000AD4F2 /* TournamentAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TournamentAPIClient.swift; sourceTree = "<group>"; };
 		51DB9062293637DD000AD4F2 /* TournamentFeed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TournamentFeed.swift; sourceTree = "<group>"; };
+		51F44F3D293E31C10085DB01 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		51FED0FF29116CCE007065B0 /* MatchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MatchViewController.swift; path = ../MatchViewController.swift; sourceTree = "<group>"; };
 		B10A5C035BFA109FDAF445E5 /* Pods-GolfAppMuster.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GolfAppMuster.release.xcconfig"; path = "Target Support Files/Pods-GolfAppMuster/Pods-GolfAppMuster.release.xcconfig"; sourceTree = "<group>"; };
 		E48AD6662E495F6B6BD87FD4 /* Pods_GolfAppMuster.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GolfAppMuster.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -106,10 +107,10 @@
 				513F9D4E292E72A4008D4EF6 /* ResultListsViewController.swift */,
 				513F9D50292EBBD7008D4EF6 /* MatchResultTableViewCell.swift */,
 				51912A5328F04A650044686C /* Main.storyboard */,
+				51F44F3D293E31C10085DB01 /* GoogleService-Info.plist */,
 				51912A5928F04A650044686C /* Assets.xcassets */,
 				51912A5B28F04A650044686C /* LaunchScreen.storyboard */,
 				51912A5E28F04A650044686C /* Info.plist */,
-				51657A75293A0B59001646EE /* GoogleService-Info.plist */,
 				51912A5628F04A650044686C /* GolfAppMuster.xcdatamodeld */,
 				51C0459B29252A8B0025B9DF /* SampleData.swift */,
 				51912A5128F04A650044686C /* ViewController.swift */,
@@ -213,6 +214,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				51912A5D28F04A650044686C /* LaunchScreen.storyboard in Resources */,
+				51F44F3E293E31C10085DB01 /* GoogleService-Info.plist in Resources */,
 				51912A5A28F04A650044686C /* Assets.xcassets in Resources */,
 				51912A5528F04A650044686C /* Main.storyboard in Resources */,
 			);
